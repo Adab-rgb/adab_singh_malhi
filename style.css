@@ -1,0 +1,181 @@
+body{
+    background-color: #657f8e;
+}
+.name{
+    font-family: "Anton", sans-serif;
+    font-weight: 4000;
+    font-style: normal;
+    font-size: 100px;
+    color: #050a30;
+}
+p {
+    color: #050a30;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    
+}
+.container>img{
+    position: absolute;
+    align-self: flex-start;
+    z-index: 100;
+}
+.container>.name{
+    width: 100%;
+    align-self: flex-start;
+    color: #050a30;
+    text-align: center;
+    font-size: 150px;
+    
+}
+a:link {
+    color: #050a30;
+  }
+ a:visited {
+    color: #050a30;
+  }
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    
+}
+.menu{
+    display: none;
+}
+.navio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+.arrow-deactive{
+    display: block;
+}
+.chess{
+    display: flex;
+    gap: 20px;
+    border: #050a30 10px solid;
+    
+
+}
+.chess>img{
+    height: 100px;
+    position: relative;
+    top: 10px;
+    
+}
+.hobby{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-align: center;
+
+}
+.golf{
+    display: flex;
+    gap: 20px;
+    border: #050a30 10px solid;
+
+}
+.golf>img{
+    height: 100px;
+    position: relative;
+    top: 10px;
+}
+.Soccer{
+    display: flex;
+    gap: 20px;
+    border: #050a30 10px solid;
+
+}
+.Soccer>img{
+    height: 100px;
+    position: relative;
+    top: 10px;
+
+}
+
+
+
+
+@media (max-width: 900px) {
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .container>.name{
+        font-size: 60px;
+    }
+    
+    
+}
+@media (max-width: 700px) {
+    .container>.name{
+        font-size: 50px;
+
+    }
+    .contact{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .Projects{
+        display:none;
+    }
+    .Hobbies{
+        display: none;
+    }
+    .menu{
+        display: inline;
+    }
+    .chess{
+        flex-direction: column;
+
+    }
+    .chess>img{
+        height: 500px
+    }
+    .golf{
+        flex-direction: column;
+    }
+    .golf>img{
+        height: 500px;
+        order: -1;
+    }
+    .Soccer{
+        flex-direction: column;
+    }
+    .Soccer>img{
+        height: 500px
+    }
+
+
+
+}
+
